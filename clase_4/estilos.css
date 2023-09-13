@@ -1,0 +1,83 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;700&family=Roboto:ital,wght@0,400;0,700;1,100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(226, 224, 225);
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    font-size: 10px;
+}
+.encabezado{
+    background-image: url('./img/fondo_harrypotter.jpg');
+    background-color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 30vh;
+}
+.menuSuperior{
+    list-style-type: none;
+    text-align: center;
+}
+.menuSuperior li{
+    display: inline-block;
+}
+.menuSuperior a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+.contenido{
+    background-color: rgb(234,181,181);
+    padding: 2rem;
+    width: 70%;
+    float: left;
+}
+
+.contenido__imagen{
+    width: 50%;
+}
+
+.contenido__imagen img{
+    width: 100%;
+    box-shadow: 5px 5px rgba(107, 107, 107, 0.492);
+    border-radius: 10px;
+
+
+}
+.contenido__sugerencias{
+    background-color: burlywood;
+    border: solid 12px black;
+    border-top: solid 22px salmon;
+    padding: 2rem;
+    line-height: 2rem;
+    width: 30%;
+    height: 1100px;
+    float: right;
+
+}
+.sugerencias__libros{
+    background-color: cadetblue;
+    padding-top: 1rem;
+    width: 90%;
+}
+.sugerencias__libros img{
+    width:100%
+}
+.lista__libros{
+    background-color: blue;
+    padding-top: 1rem;
+}
+.footer{
+    background-color: black;
+    clear: both;
+    color: aliceblue;
+}

@@ -1,0 +1,35 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;700&family=Roboto:ital,wght@0,400;0,700;1,100&display=swap');
+
+body{
+    background-color: rgb(226, 224, 225);
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    font-size: 10px;
+}
+.encabezado{
+    background-image: url('./img/fondo_harrypotter.jpg');
+    background-color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 30vh;
+}
+.menuSuperior{
+    list-style-type: none;
+    text-align: center;
+}
+.menuSuperior li{
+    display: inline-block;
+}
+.menuSuperior a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+p{
+    font-family: 'Hind Siliguri', sans-serif;
+
+}
