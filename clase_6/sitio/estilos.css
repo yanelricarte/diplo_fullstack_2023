@@ -1,0 +1,167 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;700&family=Roboto:ital,wght@0,400;0,700;1,100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(226, 224, 225);
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    font-size: 10px;
+}
+.encabezado{
+    background-image: url('./img/fondo_harrypotter.jpg');
+    background-color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 30vh;
+}
+.menuSuperior{
+    list-style-type: none;
+    text-align: center;
+}
+.menuSuperior li{
+    display: inline-block;
+}
+.menuSuperior a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.contenedor{
+display: flex;
+}
+.contenido{
+    background-color: rgb(234,181,181);
+    padding: 2rem;
+    width: 70%;
+}
+.contenido__personajes {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.contenido__imagen {
+    width: 30%;
+    position: relative; /* Añade posición relativa al contenedor de la imagen */
+    margin: 0 1rem 1rem 0; /* Agrega margen inferior y derecho entre las imágenes */
+
+}
+
+.contenido__imagen img {
+    width: 100%;
+    box-shadow: 5px 5px rgba(107, 107, 107, 0.492);
+    border-radius: 10px;
+}
+
+/* Estilos para el nombre del personaje */
+.contenido__personajes h3 {
+    position: absolute;
+    bottom: 100%; /* Coloca el nombre arriba de la imagen */
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 0.5rem;
+    margin: 0;
+}
+
+
+.contenido__sugerencias{
+    background-color: burlywood;
+    border: solid 5px black;
+    border-top: solid 2px salmon;
+    padding: 2rem;
+    line-height: 2rem;
+    width: 30%;
+    height: 1100px;
+
+}
+.sugerencias__libros{
+    background-color: cadetblue;
+    padding-top: 1rem;
+    width: 90%;
+}
+.sugerencias__libros img{
+    width:100%
+}
+.lista__libros{
+    background-color: blue;
+    padding-top: 1rem;
+}
+.footer{
+    background-color: black;
+    color: aliceblue;
+}
+
+/* Formulario contacto */
+
+.contenedor__formulario{
+padding: 1rem;
+position: absolute;
+top: 60%;
+}
+
+.formulario{
+    font-size: 1.5rem;
+}
+.input,
+input[type="text"], 
+input[type="email"],
+input[type="number"],
+fieldset
+{
+    border:4px solid #333;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+input:invalid{
+    box-shadow: 0 0 5px 1px red;
+}
+input:focus:invalid{
+    box-shadow: none;
+}
+input:valid{
+    box-shadow: 0 0 5px 1px rgb(44, 91, 66);
+}
+
+.submitBtn{
+    display: block;
+    background-color: #89cc8b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+/* NAVBAR */
+.navbar{
+    position: fixed;
+    top: 10px;
+    right:10px;
+}
+
+.navbar ul{
+    list-style: none;
+    padding: 0;
+}
+.navbar li{
+display: inline;
+margin-right: 2rem;
+}
+.navbar a{
+    text-decoration: none;
+    color: #333;
+}
