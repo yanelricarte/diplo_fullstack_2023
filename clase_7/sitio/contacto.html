@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"> Logo
+            </div>
+            <ul>
+                <li> <a href="#"> Inicio</a> </li>
+                <li> <a href="#"> Acerca de </a> </li>
+                <li> <a href="personajes.html"> Personajes</a> </li>
+                <li> <a href="contacto.html"> Contacto</a> </li>
+
+            </ul>
+
+        </nav>
+    </header>
+    <div class="contenedor__formulario">    
+        
+        <h1> Contacto</h1>
+
+                <form action="" method="get" enctype="multipart/form-data" class="formulario">            <fieldset>   
+                <legend> Formulario de contacto </legend>
+                <div>
+                    <label for="nombre"> Nombre </label>
+                    <input type="text" name="nombre" id="nombre" required />
+                </div>
+                <div>
+                    <label for="usuario">Usuario</label>
+                    <input type="text" name="usuario" id="usuario" pattern="^([a-z]+[0-9]{0,2}){5,12}$" required />
+
+                    <!-- Usuario: Vamos a solicitar para el usuario de acceso al servicio una cadena de letras minúsculas, con un número opcionalmente de hasta dos dígitos al final. La cadena completa tendrá entre 5 y 12 caracteres.-->
+                    <div>
+                        <label for="apellido"> Apellido </label>
+                        <input type="text" name="apellido" id="apellido" required>
+                    </div>
+                    <div>
+                        <label for="correo"> Correo electrónico </label>
+                        <input type="email" name="correo" id="correo" required>
+                    </div>
+                    <div>
+                        <label for="clave"> Contraseña </label>
+                        <input type="password" name="clave" id="clave" required class="input">
+                    </div>
+                    <div>
+                        <label for="tickets"> Cantidad de entradas </label>
+                        <input type="number" name="tickets_cantidad" id="tickets" required min="1" max="5" class="input">
+                    </div>
+
+                    <div>
+                        <label for="fecha_nacimiento"> Fecha de nacimiento </label>
+                        <input type="date" name="fecha_nacimiento" id="fecha_nacimiento">
+                    </div>
+                    <div>
+                        <label for="partida_nacimiento"> Partida de nacimiento </label>
+                        <input type="file" name="fecha_nacimiento" id="fecha_nacimiento">
+                    </div>
+                    <div>
+                        <label for="talle"> Talle </label>
+                        <select name="talle" id="talle">
+                            <option value="s"> S </option>
+                            <option value="m"> M </option>
+                            <option value="s"> L </option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="pais"> Pais de residencia</label>
+                        <div>
+                            <input type="radio" name="pais" value="argentina"> Argentina
+                        </div>
+                        <div>
+                            <input type="radio" name="pais" value="uruguay"> Uruguay
+                        </div>
+                        <div>
+                            <input type="radio" name="pais" value="otro"> Otro
+                        </div>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="acepta" value="1">
+                        Acepta términos y condiciones
+                    </div>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="cbox" value="checkbox1"> Este es mi primer checkbox</label><br>
+                    <label>
+                        <input type="checkbox" name="cbox" value="checkbox2"> Este es mi segundo checkbox</label><br>
+
+                    <input type="submit" value="Enviar formulario" class="submitBtn">
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
