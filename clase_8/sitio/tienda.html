@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Archivo CSS de Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/custom.css">
+
+    <title> Maquetación Bootstrap</title>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <nav class="navbarHome navbar navbar-expand-lg bg-pink">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <h1> Bootstrap con archivos compilados</h1>
+    </header>
+    <div class="container">
+        <h2>Grid en Bootstrap</h2>
+        <div class="row">
+            <!-- Columna 1 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 columna bg-danger">
+                <p>Columna 1 (Fondo Rojo)</p>
+            </div>
+            <!-- Columna 2 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 columna bg-success">
+                <p>Columna 2 (Fondo Verde)</p>
+            </div>
+            <!-- Columna 3 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 columna bg-primary">
+                <p>Columna 3 (Fondo Azul)</p>
+            </div>
+            <!-- Columna 4 (visible solo en LG) -->
+            <div class="col-12 col-lg-3 d-none d-lg-block columna bg-warning">
+                <p>Columna 4 (Fondo Amarillo)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+- Las clases col-* y col-sm-* de Bootstrap controlan la disposición de las columnas en diferentes tamaños de pantalla.
+En dispositivos extra pequeños y móviles (XS), las columnas ocupan todo el ancho de la pantalla debido a col-12.
+En dispositivos pequeños (SM), se dividen en dos columnas (col-sm-6).
+En dispositivos medianos (MD), se dividen en tres columnas (col-md-4).
+En dispositivos grandes (LG), se añade una cuarta columna (col-lg-3) que es visible solo en LG debido a d-none d-lg-block.-->
+
+
+
+
+
+
+
+
+    <!-- CDN libreria POPPER -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <!-- Archivo JS -->
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>

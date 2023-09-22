@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Mobile first */
+body{
+    background-color: rgb(195, 192, 192);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    margin: 1.5rem;
+    padding: 2rem;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+.menu{
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    text-align: center;
+}
+.menu li{
+    padding: 10px 0;
+}
+.menu a{
+    color: #fff;
+    text-decoration: none;
+}
+@media(min-width: 576px){
+    .menu{
+        display: flex;
+        position: absolute;
+        top: 60px;
+        left:0;
+        width: 100%;
+        padding: 10px 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+    input[type="checkbox"] {
+        display: none;
+    }
+    input[type="checkbox"]:checked ~ .menu {
+        max-height: 300px; 
+    }
+    .menu-icon{
+        display: block;
+        color: #fff;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
+
+.publicaciones{
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.publicaciones img{
+    width: 60%;
+}
+.contenido {
+    background-color: green;
+    padding: 2rem;
+}
+.contenido img{
+    width: 80%;
+}
+.texto{
+    font-size: 1.2rem;
+    color: white;
+}
+.sugerencias_app{
+    background-color: pink;
+    padding: 1rem;
+}
+.footer{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+/*  Sólo celular */
+@media (max-width:767px){
+    .sugerencias_app{
+        display: none;
+    }
+}
+
+/* Tabletas */
+@media(min-width:768px){
+    body{
+        background-color: rgb(237, 212, 174);
+    }
+    .publicaciones{
+        background-color: rgb(135, 135, 189);
+    }
+    .publicaciones img{
+        width: 80%
+    }
+    .contenido{
+        display: flex;
+    }
+    .imagen_mujer{
+        width: 50%;
+        background-color: deeppink;
+        text-align: center;
+        padding: 0.5rem;
+    }
+    .imagen_mujer img{
+        width: 90%;
+    }
+    .texto{
+        width: 50%;
+        background-color: chocolate;
+        text-align: center;
+        padding: 1rem;
+    }
+    .sugerencias_app{
+        display: none;
+    }
+}
+
+
+/* ESCRITORIOS  */
+@media (min-width:992px){
+    body{
+        background-color: aqua;
+    }
+    .publicaciones{
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    .publicaciones img{
+        width: 30%;
+    }
+    .sugerencias_app{
+        display: block;
+
+    }
+}

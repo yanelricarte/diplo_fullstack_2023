@@ -1,0 +1,14 @@
+.navbarHome{
+    font-weight: 500;
+}
+.bg-pink{
+    background-color: rgb(254, 239, 242);
+}
+
+/* Estilos personalizados para resaltar las columnas */
+.columna {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
