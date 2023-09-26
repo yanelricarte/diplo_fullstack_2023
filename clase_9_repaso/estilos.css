@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 10px;
+}
+body{
+    background-color: rgb(203, 203, 203);
+    font-family: sans-serif;
+}
+
+/* menu superior  */
+.menuSuperior{
+    background-color: rgb(18, 18, 18);
+    list-style-type: none;
+    text-align: center;
+}
+.menuSuperior li{
+    display: inline-block;
+    padding: 0.5rem;
+}
+.menuSuperior a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.seccion{
+    margin: 2rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    box-shadow: 3px 3px #888888;
+}
+.main__btn{
+    padding: 1.4rem 2.8rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(213, 192, 233);
+    cursor: pointer;
+    font-weight: 600;
+}
+.main__btn:hover{
+    background-color: rgb(174, 133, 213);
+}
+.main__btn:active{
+    background-color: rgb(141, 81, 198);
+}
+/* .contenedor__imagen {
+    background-color: hsla(180, 100%, 50%, 0.371);
+    background-image: url("./img/luna.jpeg");
+    background-size: contein;
+    text-align: center;
+    height: 20vh;
+    padding: 1rem;
+
+} */
+.contenedor__imagen {
+    text-align: center;
+    padding: 1rem;
+}
+.contenedor__imagen img{
+    opacity: 0.5;
+}
+.contenedor__video{
+    display: flex;
+    justify-content: center;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+.footer__texto{
+    font-size: 0.8rem;
+}
+
