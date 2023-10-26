@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #fff;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.hero-list {
+    list-style: none;
+    padding: 0;
+}
+
+.hero-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.hero-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.hero-input {
+    width: 60%;
+    padding: 5px;
+}
+
+.add-hero {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-hero {
+    color: #ff3d00;
+    cursor: pointer;
+}
+
+.hero-count {
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Estilo para las imágenes de superhéroes */
+.hero-item img {
+    max-width: 100px;
+    height: auto;
+}
