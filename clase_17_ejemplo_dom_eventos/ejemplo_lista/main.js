@@ -32,6 +32,17 @@ function agregarMascota() {
             elementoLista.classList.add("adoptada");
         });
 
+        //Agregar botón de eliminación 
+        const botonEliminar = document.createElement("button");
+        botonEliminar.textContent = "Eliminar";
+        elementoLista.appendChild(botonEliminar);
+
+        //Evento
+        botonEliminar.addEventListener("click", function(){
+            listaMascotas.removeChild(elementoLista);
+        })
+
+
         // Agregar la mascota a la lista
         const listaMascotas = document.getElementById("listaMascotas");
         listaMascotas.appendChild(elementoLista);
