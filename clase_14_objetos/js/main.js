@@ -167,6 +167,7 @@ const producto2 = new Producto("fideo", "50");
 producto1.sumaIva();
 producto2.sumaIva();
 producto1.vender();
+
 console.log("Producto 1 después de aplicar sumaIva y vender: ")
 console.log("Nombre: ", producto1.nombre)
 console.log("Precio: ", producto1.precio)
