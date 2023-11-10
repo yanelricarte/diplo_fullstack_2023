@@ -13,7 +13,7 @@ function App() {
       color: 'Rojo y dorado',
       director: 'Albus Dumbledore',
       ubicacion: 'Torre Gryffindor, Castillo de Hogwarts',
-      imagen: 'gryffindor.jpeg',
+      imagen: 'gryffindor', // solo el nombre de la imagen sin la extensión
     },
     {
       nombre: 'Hufflepuff',
@@ -22,7 +22,7 @@ function App() {
       color: 'Amarillo y negro',
       director: 'Pomona Sprout',
       ubicacion: 'Sótano, Castillo de Hogwarts',
-      imagen: 'hufflepuff.jpg',
+      imagen: 'hufflepuff',
     },
     {
       nombre: 'Ravenclaw',
@@ -31,7 +31,7 @@ function App() {
       color: 'Azul y bronce',
       director: 'Filius Flitwick',
       ubicacion: 'Torre Ravenclaw, Castillo de Hogwarts',
-      imagen: 'ravenclaw.jpeg',
+      imagen: 'ravenclaw',
     },
     {
       nombre: 'Slytherin',
@@ -40,7 +40,7 @@ function App() {
       color: 'Verde y plateado',
       director: 'Severus Snape',
       ubicacion: 'Mazmorras, Castillo de Hogwarts',
-      imagen: 'slytherin.jpg',
+      imagen: 'slytherin',
     },
   ];
 

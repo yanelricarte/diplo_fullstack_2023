@@ -4,6 +4,8 @@ import imagenes from './imagenes';
 
 
 function Casa(props){
+    console.log('Ruta de la imagen:', imagenes[props.imagen]);
+
     return(
         <section className="seccion">
         <h2> {props.nombre}</h2>
