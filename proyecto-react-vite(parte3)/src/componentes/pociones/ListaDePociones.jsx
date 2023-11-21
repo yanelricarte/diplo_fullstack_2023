@@ -21,6 +21,6 @@ const ListaDePociones = ({ pociones, completarPocion, eliminarPocion }) => {
     pociones: PropTypes.array.isRequired,
     completarPocion: PropTypes.func.isRequired,
     eliminarPocion: PropTypes.func.isRequired,
-    };
+};
 
 export default ListaDePociones;

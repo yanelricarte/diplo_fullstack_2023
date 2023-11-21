@@ -1,0 +1,12 @@
+.contenedor_imagen{
+    width: 30%;
+    background-color: aqua;
+}
+
+.contenedor_imagen img{
+    width: 100%;
+}
+
+.contenedor-personajes{
+    display: flex;
+}
