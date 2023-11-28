@@ -10,3 +10,39 @@
 .contenedor-personajes{
     display: flex;
 }
+
+.container {
+    margin: auto;
+    height: 100vh;
+    padding: 1rem;
+    text-align: center;
+    }
+    
+    .title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    .input {
+        width: 80%;
+        padding: 8px;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    
+    .list {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .listItem {
+        font-size: 18px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5px;
+    }

@@ -1,0 +1,28 @@
+    .menu {
+        background-color: #333;
+        padding: 10px;
+    }
+    
+    .menu-list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .menu-item {
+        margin: 0;
+    }
+    
+    .menu-link {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        transition: color 0.3s ease;
+    }
+    
+    .menu-link:hover {
+        color: #ffcc00; /* Cambia el color al pasar el ratón por encima */
+    }
